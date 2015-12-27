@@ -1,0 +1,9 @@
+<h2>Sports Teams</h2>
+<% @organizations.each do |organization| %>
+  <hr>
+  <p><strong>School: </strong><%= organization.school %></p>
+  <p><strong>Name: </strong><%= organization.name %></p>
+  <p><strong>Color: </strong><%= organization.color %></p>
+  <p><strong>Logo: </strong><%= organization.logo %></p>
+  <p><strong>Motto: </strong><%= organization.motto %></p>
+<% end %>

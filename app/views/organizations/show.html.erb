@@ -1,0 +1,8 @@
+<h3>Sports Team</h3>
+<p><strong>School: </strong><%= @organization.school %></p>
+<p><strong>Name: </strong><%= @organization.name %></p>
+<p><strong>Color: </strong><%= @organization.color %></p>
+<p><strong>Logo: </strong><%= @organization.logo %></p>
+<p><strong>Motto: </strong><%= @organization.motto %></p>
+<div>&nbsp</div>
+<%= link_to "Delete this Team", "/organizations/#{@organization.id}", method: :delete %>

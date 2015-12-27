@@ -1,0 +1,25 @@
+<%= form_tag "/organizations/#{@organization.id}", method: :patch do %>
+  <div class="form-group">
+    <%= label_tag :school %>
+    <%= text_field_tag :school, @organization.school, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= label_tag :name %>
+    <%= text_field_tag :name, @organization.name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= label_tag :color %>
+    <%= text_field_tag :color, @organization.color, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= label_tag :logo %>
+    <%= text_field_tag :logo, @organization.logo, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= label_tag :motto %>
+    <%= text_field_tag :motto, @organization.motto, class: "form-control" %>
+  </div>
+  <div>
+    <%= button_tag 'Submit', class: "btn btn-default" %>
+  </div>
+<% end %>
